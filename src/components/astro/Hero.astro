@@ -1,33 +1,11 @@
-<section class="hero">
-  <div class="hero-content">
+---
+import styles from './Hero.module.scss';
+---
+
+<section class={styles.hero}>
+  <div class={styles['hero-content']}>
     <h1>Construye sitios rápidos con Astro</h1>
     <p>El framework moderno para la web del futuro.</p>
-    <a href="#cta" class="btn">Empieza ahora</a>
+    <a href="#cta" class={styles.btn}>Empieza ahora</a>
   </div>
 </section>
-
-<style>
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    background: linear-gradient(to right, #1e3a8a, #2563eb);
-    color: white;
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: white;
-    color: #2563eb;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-</style>
